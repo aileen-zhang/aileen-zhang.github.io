@@ -3,7 +3,7 @@ title:               'juvenalia'
 tagline:             'for I shall never grow old'
 description:         'writing (largely creative)'
 url:                 https://aileenz.com
-baseurl:             ''
+baseurl:             '/writing'
 paginate:            5
 permalink:           pretty
 
