@@ -3,12 +3,12 @@ layout: page
 title: time travel
 ---
 
-Browse all posts by month and year.
+Old stuff, new stuff; it's all here.
 
 {% assign postsByYearMonth = site.posts | group_by_exp: "post", "post.date | date: '%B %Y'" %}
 {% for yearMonth in postsByYearMonth %}
   <h2>{{ yearMonth.name }}</h2>
-  <ul>
+  <ul class="list-archive">
     {% for post in yearMonth.items %}
       <li><a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
